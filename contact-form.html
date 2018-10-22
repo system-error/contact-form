@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+    <head>
+        <title>Contact Form</title>
+		<link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+       <header>
+         <h1 id="title">Contact Form</h1>
+       </header>
+       <section id="form">
+         <p id="description">Please fill your info for contancting us: </p>
+        <form method="post" id="survey-form" action="#">
+          <div>
+            <label for="name-label" class="label">Name: </label><input type="text" id="name-label" placeholder="Your Name" name="name" required>  
+          </div>
+          <div>
+            <label for="email-label" class="label">Email: </label><input type="text" id="email-label" name="email" placeholder="Your Email" required>
+          </div>
+           <div>
+           <label for="email" class="label">Birthdate: </label><input type="date" name="birthdate"></div>
+            <div>
+    <label for="number-label" class="label">How old are you? </label>
+<input type="number" id="number-label" name="age" min="1" max="100" placeholder="Age">
+</div>
+<label class="label" style="vertical-align: top;">Your Gender:</label>
+    <div class="radios">
+      <div class="inputGroup">
+    <input type="radio" id="male" class="btninputs" name="gender" value="male" />
+    <label class="radiobtns" for="male">Male</label>
+      </div>
+      <div class="inputGroup">
+    <input type="radio" id="female" class="btninputs" name="gender" value="female" />
+    <label class="radiobtns" for="female">Female</label>
+      </div>
+      <div class="inputGroup">
+    <input type="radio" id="other" class="btninputs" name="gender" value="other" />
+     <label class="radiobtns" for="other">Other</label>
+      </div>
+  </div>
+      <div>
+    <label for="dropdown" class="label">Your Favorite Pet:</label>
+     <select name="pets" class="select-menu" id="dropdown">
+   <option value="">--Please choose an option--</option>
+  <option value="cat">Cat</option>
+  <option value="dog">Dog</option>
+  <option value="hamster">Hamster</option>
+  <option value="parrot">Parrot</option>
+</select> 
+  </div>
+<div>
+    <label for="message" id="msg" class="label" style="vertical-align: top;">Your Message:</label>
+    <textarea id="message" name="user_message"></textarea>
+  </div>
+<div id="button">
+  <input type="submit" id="submit-button" value="Submit">
+</div>     
+        </form>
+       </section>
+       <footer>
+
+       </footer>
+    </body>
+</html>
